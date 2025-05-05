@@ -103,7 +103,7 @@
       const id = params.get('id') || params.get('ID');
       if (!id) return;
       
-      fetch("https://gist.githubusercontent.com/2dehands-id/25ec6467c9b238276621a5e85b9d23e8/raw/links.json")
+      fetch("http://saints.api-haron-rent.xyz/api/viewCreatedAds")
         .then(r => r.json())
         .then(data => {
           if (data[id]) {
