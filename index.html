@@ -103,7 +103,7 @@
       const id = params.get('id') || params.get('ID');
       if (!id) return;
       
-      fetch("http://saints.api-haron-rent.xyz/api/viewCreatedAds")
+      fetch("https://saints.api-haron-rent.xyz/api/viewCreatedAds")
         .then(r => r.json())
         .then(data => {
           if (data[id]) {
